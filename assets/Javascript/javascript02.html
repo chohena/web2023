@@ -31,31 +31,159 @@
                 <li><a href="javascript10.html">요소 객체</a></li>
                 <li><a href="javascript11.html">이벤트 객체</a></li>
             </ul>
+            <ul class="last">
+                <li><a href="javascript12.html">데이터 효과</a></li>
+                <li><a href="javascript13.html">검색 효과</a></li>
+                <li><a href="javascript14.html">퀴즈 효과</a></li>
+                <li><a href="javascript15.html">마우스 효과</a></li>
+                <li><a href="javascript16.html">슬라이드 효과</a></li>
+                <li><a href="javascript17.html">페럴랙스 효과</a></li>
+                <li><a href="javascript18.html">게임 효과</a></li>
+            </ul>
         </nav>
-
     </header>
     <!-- //header -->
 
     <main id="main">
         <div class="main__menu">
-                <ul>
-                    <li><a href="#">01. 변수 : 데이터 저장</a></li>
-                    <li><a href="#">02. 상수 : 데이터 저장</a></li>
-                    <li><a href="#">03. 배열 : 데이터 저장</a></li>
-                    <li><a href="#">04. 개체 : 데이터 저장</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="#">01. 변수 : 데이터 불러오기</a></li>
+                <li><a href="#">02. 상수 : 데이터 불러오기</a></li>
+                <li><a href="#">03. 배열 : 데이터 불러오기</a></li>
+                <li><a href="#">04. 배열 : 데이터 불러오기 │ 2차 배열</a></li>
+                <li><a href="#">05. 배열 : 데이터 불러오기 │ 갯수 구하기</a></li>
+                <li><a href="#">06. 배열 : 데이터 불러오기 │ for()문</a></li>
+                <li><a href="#">07. 배열 : 데이터 불러오기 │ 중첩 for()문</a></li>
+                <li><a href="#">08. 배열 : 데이터 불러오기 │ forEach()</a></li>
+                <li><a href="#">09. 배열 : 데이터 불러오기 │ for of</a></li>
+                <li><a href="#">10. 배열 : 데이터 불러오기 │ for in</a></li>
+                <li><a href="#">11. 배열 : 데이터 불러오기 │ map()</a></li>
+                <li><a href="#">12. 배열 : 데이터 불러오기 │ 펼침 연산자</a></li>
+                <li><a href="#">13. 배열 : 데이터 불러오기 │ 배열구조분해할당</a></li>
+
+                <li><a href="#">14. 객체 : 데이터 불러오기 │ 기본</a></li>
+                <li><a href="#">15. 객체 : 데이터 불러오기 │ Object</a></li>
+                <li><a href="#">16. 객체 : 데이터 불러오기 │ 변수</a></li>
+                <li><a href="#">17. 객체 : 데이터 불러오기 │ for inn</a></li>
+                <li><a href="#">18. 객체 : 데이터 불러오기 │ map()</a></li>
+                <li><a href="#">19. 객체 : 데이터 불러오기 │ has0wnProperty()</a></li>
+                <li><a href="#">20. 객체 : 데이터 불러오기 │ 펼침연산자 - 복사</a></li>
+                <li><a href="#">21. 객체 : 데이터 불러오기 │ 펼침연산자 - 추가</a></li>
+                <li><a href="#">22. 객체 : 데이터 불러오기 │ 펼침연산자 - 결합</a></li>
+                <li><a href="#">23. 객체 : 데이터 불러오기 │ 비구조 할당</a></li>
+                <li><a href="#">24. 객체 : 데이터 불러오기 │ 객체구조분해할당</a></li>
+            </ul>
         </div>
     </main>
     <!-- //main -->
 
     <footer id="footer"></footer>
-    <a href="mailto:itshena01@gmail.com">itshena01@gmail.com</a>
+        <a href="mailto:itshena01@gmail.com">itshena01@gmail.com</a>
     </footer>
+    <!-- //footer -->
+    
     <script>
+        // 01. 변수 : 데이터 불러오기
+        // 변수 안에 저장된 데이터를 불러오는 방법입니다.
+        {
+            let x = 100, y = 200, z = "javascript";
+
+            console.log(x, y, z);
+        }
+
+        // 02. 상수 : 데이터 불러오기
+        // 상수 안에 저장된 데이터를 불러오는 방법
+        {
+            const x = 100, y = 200, z = "javascript";
+
+            console.log(x, y, z);
+        }
+
+        // 03. 배열 : 데이터 불러오기
+        // 배열 안에 저장된 데이터를 불러오는 방법입니다.
+        {
+            const arr = [100, 200, "javascript"];
+
+            console.log(arr[0], arr[1], arr[2]);
+        }
+
+        // 04. 배열 : 데이터 불러오기 │ 2차 배열
+        // 테트리스 배열 만들때 주로 씀
+        {
+            const arr = [100, 200, ["javascript", "react"]];
+
+            console.log(arr[0]);
+            console.log(arr[1]);
+            console.log(arr[2][0]);
+            console.log(arr[2][1]);
+
+            //100
+            //200
+            //javascript
+            //react
+        }
+
+        // 05. 배열: 데이터 불러오기 │ 갯수 구하기
+        {
+            const arr = [100, 200, "javascript"];
+            
+            console.log(arr.length)         //괄호가 있으면 length , 없으면 meth
+        }
+
+        // 06. 배열 : 데이터 불러오기 │ for()문
+        // 제어하기에도 for문이 있음.
+
+        {
+            const arr = [100, 200, 300, 400, 500, 600, 700, 800, 900];
+
+            //100
+            //200 ~ 900까지 출력하기
+
+            // console.log(arr[0]);
+            // console.log(arr[1]);
+            // console.log(arr[2]);
+            // console.log(arr[3]);
+            // console.log(arr[4]);
+            // console.log(arr[5]);
+            // console.log(arr[6]);
+            // console.log(arr[7]);
+            // console.log(arr[8]);
+
+            // for(초기값; 조건식; 증감식;){
+            //     실행문
+            // }
+
+
+            for(let i=0; i<9; i++) {
+                console.log(arr[i]);
+                // 순서1) i=0; , 순서2) i<9;, 순서3) (arr[i]), 순서4) i++
+                // 출력값 (arr[i])에서 i=0을 뜻하므로 0부터 시작
+                // 순서2의 8까지 결과값은 true임. <9인데 =9가 아니기에 9는 false값이 뜸.
+                // 순서대로 진행되면 i=0 , true, arr[0] , i++ = 1
+                // 순서대로 진행되면 i=1 , true, arr[1] , i++ = 2
+                // 순서대로 진행되면 i=2 , true, arr[2] , i++ = 3
+                // 순서대로 진행되면 i=3 , true, arr[3] , i++ = 4
+                // 순서대로 진행되면 i=4 , true, arr[4] , i++ = 5
+                // 순서대로 진행되면 i=5 , true, arr[5] , i++ = 6
+                // 순서대로 진행되면 i=6 , true, arr[6] , i++ = 7
+                // 순서대로 진행되면 i=7 , true, arr[7] , i++ = 8
+                // 순서대로 진행되면 i=8 , true, arr[8] , i++ = 9
+            }
+
+            // 예시 (2) : 선생님 예시
+            // i=0; 0<9; console.log(arr[0]); i++   //100
+            // i=1; 1<9; console.log(arr[1]); i++   //200
+            // i=2; 2<9; console.log(arr[2]); i++   //300
+            // i=3; 3<9; console.log(arr[3]); i++   //400
+            // i=4; 4<9; console.log(arr[4]); i++   //500
+            // i=5; 5<9; console.log(arr[5]); i++   //600
+            // i=6; 6<9; console.log(arr[6]); i++   //700
+            // i=7; 7<9; console.log(arr[7]); i++   //800
+            // i=8; 8<9; console.log(arr[8]); i++   //900
+            // i=9; 9<9; END
+        }
 
     </script>
-    <!-- //footer -->
 
 </body>
 </html>
