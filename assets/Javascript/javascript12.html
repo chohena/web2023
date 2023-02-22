@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript : 데이터 효과</title>
+    <title>javascript : 12</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/prism.css">
         <link rel="shortcut icon" href="assets/ico/javascript.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/javascript192x192.png">
         <link rel="icon" type="image/png" sizes="192x192"  href="/assets/ico/javascript192x192.png">
@@ -31,62 +30,20 @@
                 <li><a href="javascript09.html">브라우저 객체</a></li>
                 <li><a href="javascript10.html">요소 객체</a></li>
                 <li><a href="javascript10.html">요소 객체</a></li>
-                <li><a href="javascript11.html">이벤트 객체</a></li>
-            </ul>
-            <ul class="last">
-                <li class="active"><a href="javascript12.html">데이터 효과</a></li>
-                <li><a href="javascript13.html">검색 효과</a></li>
-                <li><a href="javascript14.html">퀴즈 효과</a></li>
-                <li><a href="javascript15.html">마우스 효과</a></li>
-                <li><a href="javascript16.html">슬라이드 효과</a></li>
-                <li><a href="javascript17.html">페럴랙스 효과</a></li>
-                <li><a href="javascript18.html">게임 효과</a></li>
+                <li class="active"><a href="javascript11.html">이벤트 객체</a></li>
             </ul>
         </nav>
     </header>
     <!-- header -->
 
     <main id="main">
-        <div class="container">
-            <div class="main__menu">
+        <div class="main__menu">
                 <ul>
-                    <li><a href="#">01. 데이터 이펙트 : 1부터 100까지 출력하기</a></li>
-                    <li><a href="#">02. 데이터 이펙트 : 0부터 50까지 출력하기</a></li>
-                    <li><a href="#">03. 0부터 100까지 짝수만 출력하기</a></li>
-                    <li><a href="#">04. 1부터 100까지 5의 배수만 출력하기</a></li>
-                    <li><a href="#">05. 1부터 50일 때 경고창 출력하기</a></li>
+                    <li><a href="#">01. 변수 : 데이터 저장</a></li>
+                    <li><a href="#">02. 상수 : 데이터 저장</a></li>
+                    <li><a href="#">03. 배열 : 데이터 저장</a></li>
+                    <li><a href="#">04. 개체 : 데이터 저장</a></li>
                 </ul>
-                <ul>
-                </div>
-                    <li><a href="#">01. 데이터 이펙트 : 1부터 100까지 출력하기</a></li>
-                </ul>
-            </div>
-             <div class="main__sample">
-                    <div id="sample" class="sample 01">
-                    <h3>01. 데이터 이펙트 : 1부터 100까지 출력하기</h3>
-                    <p>for문을 이용해서 0-100까지 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js"> for(let i=1; i&lt;=100; i++) { // 반복문 주석 표시
-        console.log(i); // 초기값을 0으로 설정하고 1부터 100까지 출력함.
-        }
-
-// 1,2,3,4,5,6~~100
-</code></pre>
-                </div>
-                <!-- sample 01 -->
-
-                <div id="sample" class="sample 02">
-                    <h3>02. 데이터 이펙트 : 0부터 50까지 출력하기</h3>
-                    <p>for문을 이용해서 1-50까지 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js"> for(let i=1; i&lt;=50; i++) { // 반복문 주석 표시
-            console.log(i); // 초기값을 0으로 설정하고 1씩 증가시켜서 50번 반복함.
-        }
-    
-// 1,2,3,4,5,6~~50
-</code></pre>
-                </div>
-                <!-- sample 02 -->
-
-
             </div>
         </div>
     </main>
@@ -97,45 +54,8 @@
     </footer>
     <!-- //footer -->
 
-    <script src="assets/js/prism.js"></script>
     <script>
-        // 01. 1부터 100까지 출력하기
-        // for(let i=1; i<=100; i++) {
-        //      console.log(i)
-        //}
 
-        // 02. 0부터 50까지 출력하기
-        // for(let i=0; i<=50; i++) {         //i = i + 1
-        //      console.log(i)
-        //}                                   //1번째 방법
-
-        // for(let i=0; i<51; i++) {
-        //      console.log(i)
-        //}                                   //2번째 방법
-
-        // 03. 1부터 100까지 짝수만 출력하기
-        // for(let i=0; i<=100; i+=2) {        //i = i + 2
-        //      console.log(i)
-        //}
-
-        //04. 1부터 100까지 5의 배수만 출력하기
-        //for(let i=0; i<=100; i+=5) {
-        //      console.log(i)                 //i = i + 5
-        //   }
-
-        //05.
-        for(let i=1; i<=100; i++) {
-            if(i % 50  == 0) {
-                console.log(i)
-            }
-        }
-
-        //05.
-        for(let i=1; i<=100; i++) {
-            if(i % 2  == !0) {
-                console.log(i)
-            }
-        }
     </script>
 
 </body>
