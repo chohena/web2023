@@ -53,114 +53,145 @@
                     <li><a href="#">02. 데이터 이펙트 : 0부터 50까지 출력하기</a></li>
                     <li><a href="#">03. 데이터 이펙트 : 1부터 100까지 짝수만 출력하기</a></li>
                     <li><a href="#">04. 데이터 이펙트 : 1부터 100까지 5의 배수만 출력하기</a></li>
-                    <li><a href="#">05. 데이터 이펙트 : 1부터 100까지 50일 때 경고창 출력하기</a></li>
+                    <li><a href="#">05. 데이터 이펙트 : for문을 이용해서 테이블 만들기 </a></li>
                 </ul>
             </div>
-        <div class="main__sample">
-            <div id="sample01" Class="sample">
-                <h3>01. 데이터 이펙트 : 1부터 100까지 출력하기</h3>
-                <p>for문을 이용해서 1-100까지 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js"> for (let i=1; i&lt;=100; i++) { //반복문 for문 설정
-    console.log(i)
-}
+            <!-- //main__menu -->
 
-// 1,2,3,4,5,6 ~ 100
-</code></pre>
-            </div>
-        </div>
-        <!--sample 01-->
-
-        <div class="main__sample">
-            <div id="sample02" Class="sample">
-                <h3>02. 데이터 이펙트 : 0부터 50까지 출력하기</h3>
-                <p>for문을 이용해서 0-50까지 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js"> for (let i=0; i&lt;=50; i++){
-      console.log(i)
-}
-
-//0,1,2,3, ~ 50
-</code></pre>
-            </div>
-        </div>
-        <!--sample 02-->
-
-        <div class="main__sample">
-            <div id="sample03" Class="sample">
-                <h3>03. 데이터 이팩트: 1부터 100까지 짝수만 출력하기</h3>
-                <p>for문을 이용해서 1-100까지 짝수만 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js"> for (let i=0; i&lt;=100; i+=2) {   //i = i + 2
-      console.log(i)
-  }
-
-// 중간 연산자를 이용
-// 1+= 2는 i = i + 2와 같음 (2씩 증가)
-//결과값 : 2,4,6 ~ 50
-</code></pre>
-            </div>
-        </div>
-        <!--sample 03-->
-
-        <div class="main__sample">
-            <div id="sample04" Class="sample">
-                <h3>04.데이터 이팩트: 1부터 100까지 5의 배수만 출력하기</h3>
-                <p>for문을 이용해서 5의 배수를 출력하는 예제입니다. 조건문 if문과 증감연산자를 이용한 방법입니다.</p>
-<pre class="line-numbers language-js" tabindex="0"><code class="language-js">
-//증감 연산자를 이용한 방법
-for (let i=0; i&lt;=100; i+=5) {
-    console.log(i)
-}
-
-// if문을 이용한 방법
-for(let i=1; i<=100; i++) {
-    if(i % 2 == 0) {    //% 연산자를 이용하여 나머지가 0이면 짝수를 의미한다.
-        console.log (i)
+            <div class="main__sample">
+                <div id="sample01" Class="sample">
+                    <h3>01. 데이터 이펙트 : 1부터 100까지 출력하기</h3>
+                    <p>for문을 이용해서 1-100까지 출력하는 예제입니다.</p>
+    <pre class="line-numbers"><code class="language-js"> for (let i=1; i&lt;=100; i++) { //반복문 for문 설정
+        console.log(i)
     }
-}
 
-// 결과값 : 2,4,6,8 ~ 50
+    // 1,2,3,4,5,6 ~ 100
+    </code></pre>
+                </div>
+                <!--sample 01-->
 
-</code></pre>
-            </div>
-        </div>
-        <!--sample 03-->
+                <div id="sample02" Class="sample">
+                    <h3>02. 데이터 이펙트 : 0부터 50까지 출력하기</h3>
+                    <p>for문을 이용해서 0-50까지 출력하는 예제입니다.</p>
+    <pre class="line-numbers"><code class="language-js"> for (let i=0; i&lt;=50; i++){
+        console.log(i)
+    }
 
-<script src="assets/js/prism.js"></script>
-<script>
-    // 01. 1부터 100까지 출력하기
-    //  for(let i=1; i<=100; i++){
-    //      console.log(i)
-    //  }
+    //0,1,2,3, ~ 50
+    </code></pre>
+                </div>
+                <!--sample 02-->
 
-    // 02. 0부터 50까지 출력하기
-    //  for(let i=0; i<=50; i++){
-    //      console.log(i)
-    //  }
+                <div id="sample03" Class="sample">
+                    <h3>03. 데이터 이팩트: 1부터 100까지 짝수만 출력하기</h3>
+                    <p>for문을 이용해서 1-100까지 짝수만 출력하는 예제입니다.</p>
+    <pre class="line-numbers"><code class="language-js"> for (let i=0; i&lt;=100; i+=2) {   //i = i + 2
+        console.log(i)
+    }
 
-    //03. 0부터 100까지 짝수만 출력하기
-    //  for (let i=0; i<=100; i+=2) {   //i = i + 2
-    //      console.log(i)
-    //  }
+    // 중간 연산자를 이용
+    // 1+= 2는 i = i + 2와 같음 (2씩 증가)
+    //결과값 : 2,4,6 ~ 50
+    </code></pre>
+                </div>
+                <!--sample 03-->
 
-    //04. 1부터 100까지 5의 배수만 출력하기
-    // for (let i=0; i<=100; i+=5) {
-    //     console.log(i)
-    // }
+                <div id="sample04" Class="sample">
+                    <h3>04.데이터 이팩트: 1부터 100까지 5의 배수만 출력하기</h3>
+                    <p>for문을 이용해서 5의 배수를 출력하는 예제입니다. 조건문 if문과 증감연산자를 이용한 방법입니다.</p>
+    <pre class="line-numbers language-js" tabindex="0"><code class="language-js">
+    //증감 연산자를 이용한 방법
+    for (let i=0; i&lt;=100; i+=5) {
+        console.log(i)
+    }
 
-    //05. 1부터 100까지 50일 때 경고창 출력하기
-    for(let i=1; i<=100; i++) {
-        if(i % 5 == 0) {
-            console.log(i)
+    // if문을 이용한 방법
+    for(let i=1; ilt&;=100; i++) {
+        if(i % 2 == 0) {    //% 연산자를 이용하여 나머지가 0이면 짝수를 의미한다.
+            console.log (i)
         }
     }
-</script>
+
+    // 결과값 : 2,4,6,8 ~ 50
+    </code></pre>
+                </div>
+                <!--sample 04-->
+            </div>
+            <!-- //main__sample -->
         </div>
     </main>
     <!-- main -->
 
-    <footer id="footer"></footer>
+    <footer id="footer">
         <a href="mailto:itshena01@gmail.com">itshena01@gmail.com</a>
     </footer>
     <!-- //footer -->
+
+
+
+
+
+    <script src="assets/js/prism.js"></script>
+    <script>
+        // 01. 1부터 100까지 출력하기
+        //  for(let i=1; i<=100; i++){
+        //      console.log(i)
+        //  }
+
+        // 02. 0부터 50까지 출력하기
+        //  for(let i=0; i<=50; i++){
+        //      console.log(i)
+        //  }
+
+        //03. 0부터 100까지 짝수만 출력하기
+        //  for (let i=0; i<=100; i+=2) {   //i = i + 2
+        //      console.log(i)
+        //  }
+
+        //04. 1부터 100까지 5의 배수만 출력하기
+        // for (let i=0; i<=100; i+=5) {
+        //     console.log(i)
+        // }
+
+        // 05. 1부터 100까지 50일 때 경고창 출력하기
+        // for(let i=1; i<=100; i++) {
+        //     if(i % 5 == 0) {
+        //         console.log(i)
+        //     }
+        // }
+
+        // 05. 데이터 이펙트 : for문을 이용해서 테이블 만들기
+
+
+
+        // for문을 이용해서 1부터 99까지 출력
+        // for (let i=1; i<=99; i++) {
+        //     console.log(i)
+        // }
+
+        // for문을 이용해서 1부터 99까지 짝수만 출력
+        // for (let i=1; i<100; i++) {
+        //     if(i % 2 == 0) {
+        //         console.log(i);
+        //     }
+        // }
+
+        //for문을 이용해서 1부터 99까지 짝수(파란색)만 출력
+        // for( let i=1; i<100; i++ ) {
+        //     if(i % 2 == 0) {
+        //         document.write("<span style='color:blue'>"+i+")</span>");
+        //     }
+        // }
+        
+        //for문을 이용해서 1부터 99까지 홀수(파란색)만 출력
+        // for( let i=1; i<100; i++ ) {
+        //     if(i % 2 == 1) {
+        //         document.write("<span style='color:red'>"+i+")</span>");
+        //     }
+        // }
+        
+    </script>
 
 </body>
 </html>
