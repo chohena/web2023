@@ -53,6 +53,14 @@
             }
             table += "</table>"
         document.write(table)
+
+        for (let i = 1; i <= 100; i++) {
+          if (i % 2 === 0) {
+            document.write("<span style='color: blue'>" + i + "</span> ");
+          } else if (i % 1 === 0) {
+            document.write("<span style='color: green'>" + i + "</span> ");
+          } 
+        }
     </script>
 </body>
 </html>

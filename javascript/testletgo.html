@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시험</title>
+</head>
+<body>
+    <script>
+        //1. 1~100까지
+
+        for(let i=1; i<=100; i++){
+            document.write(i);
+        }
+        document.write("<br>");
+
+        //2. 1~100까지 짝수만
+
+        for(let i=2; i<=100; i+=2){
+            document.write(i);
+        }
+        document.write("<br>");
+
+        //3.1~100까지 5의 배수
+
+        {
+            for(let i=5; i<=100; i+=5){
+            document.write(i);
+        }
+        document.write("<br>");
+        }
+
+        {
+            for(let i=5; i<=100; i++){
+                if(i % 5 == 0){
+                    document.write(i);
+                }
+            }
+        }
+        document.write("<br>");
+
+        //4. 1부터 100까지 짝수(파란색)
+
+        for(let i=1; i<=100; i++){
+            if(i % 2 == 0){
+            document.write("<span style='color:blue'>"+i+"</span>");
+            }
+        }
+        document.write("<br>");
+
+        //5. 구구단 6단
+        for(let i=6; i<=6; i++){
+            document.write(i+"단","<br>");
+
+        for(let j=1; j<=9; j++){
+            document.write(i+"*"+j+"="+i*j);
+            document.write("<br>,<br>")
+            }
+        }
+        document.write("<br>")
+
+        //6. 테이블 100칸
+        
+        let table = "<table border='1'>";
+            for(let i=1; i<=10; i++){
+                table += "<tr>";
+                    for(let j=1; j<=10; j++){
+                        table += "<td>"+j+"</td>";
+                    }
+
+                    table += "</tr>";
+            }
+            table += "</table>";
+            document.write(table);
+
+        //7. 함수 유형 4가지
+
+        // 1. 선언
+
+        {
+            function func(){
+                document.write("ㅎ2");
+            }
+        func();
+        }
+
+            document.write("<br>");
+
+        // 2. 익명
+        {
+            const func = function (){
+                document.write("ㅎ2");
+            }
+            func();
+        }
+
+        // 3. 매개변수
+
+        {
+            function func (str){
+                document.write(str);
+            }
+            func ("ㅎ2");
+        }
+
+        {
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -7,9 +7,9 @@
     <title>javascript : 데이터 실행하기</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="shortcut icon" href="assets/ico/javascript.ico">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/javascript192x192.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="assets/ico/javascript192x192.png">
+    <link rel="shortcut icon" href="assets/ico/javascript.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/javascript192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/ico/javascript192x192.png">
 </head>
 
 <body>
@@ -37,21 +37,148 @@
 
     <main id="main">
         <div class="main__menu">
-                <ul>
-                    <li><a href="#">01. 변수 : 데이터 저장</a></li>
-                    <li><a href="#">02. 상수 : 데이터 저장</a></li>
-                    <li><a href="#">03. 배열 : 데이터 저장</a></li>
-                    <li><a href="#">04. 개체 : 데이터 저장</a></li>
+                <ul>                   
+                    <li><a href="#">01. 선언적 함수</a></li>
+                    <li><a href="#">02. 익명 함수</a></li>
+                    <li><a href="#">03. 매개변수 함수</a></li>
+                    <li><a href="#">04. 리턴값 함수</a></li> // 4가지 다외워야함
+                    <li><a href="#">05. 화살표 함수 : 선언적 함수</a></li>
+                    <li><a href="#">06. 화살표 함수 : 익명 함수</a></li>
+                    <li><a href="#">07. 화살표 함수 : 매개변수 함수</a></li>
+                    <li><a href="#">08. 화살표 함수 : 리턴값 함수</a></li> // 4가지다 바삭바삭하게 외워야함
+                    <li><a href="#">09. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값</a></li>
+                    <li><a href="#">10. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략</a></li>
+                    <li><a href="#">11. 화살표 함수 : 선언적 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략</a></li>
+                    <li><a href="#">01. 함수 유형 : 함수와 매개변수를 이용한 형태</a></li>
+                    <li><a href="#">01. 함수 유형 : 함수와 변수를 이용한 형태</a></li>
+                    <li><a href="#">01. 함수 유형 : 함수와 배열, 객체를 이용한 형태</a></li>
+                    <li><a href="#">01. 함수 유형 : 객체 안에 변수와 함수를 이용한 형태</a></li>
+                    <li><a href="#">01. 함수 유형 : 객체 생성자 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 프로토타입 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 객체리터럴 함수</a></li> //전부 다 바삭바삭하게 이해해야하는 기본개념
+                    <li><a href="#">01. 함수 유형 : 즉시 실행 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 파라미터 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 아규먼트 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 재귀 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 콜백 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : promise 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 내부 함수</a></li>
+                    <li><a href="#">01. 함수 유형 : 내부 함수 : 스코프, 클로저</a></li>
+                    <li><a href="#">01. 클래스</a></li>
+                    <li><a href="#">01. 클래스 상속</a></li>
+                    
                 </ul>
-            </div>
         </div>
+        <div class="main__sample">
+            <div id="sample01" class="sample">
+                <h3>선언적 함수</h3>
+                <p>함수를 선언합니다.</p>
+                <div class="script">
+<pre><code class="language-js">{
+    fution func (){
+        doc
+    }
+}
+</code></pre>
+                </div>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            100<br>
+                            200<br>
+                            javascript
+                        </div>
+                    </details>
+                </div>
+            </div>
+        <!-- //sample01-->
     </main>
     <!-- //main -->
 
-    <footer id="footer"></footer>
+    <footer id="footer">
     <a href="mailto:itshena01@gmail.com">itshena01@gmail.com</a>
     </footer>
     <!-- //footer -->
+
+    <script>
+        //변수, 상수, 배열, 객체 : 데이터 저장
+        //함수 : 데이터 실행(문)
+
+        // 01. 변수명으로 쓰기 적절하지 않은 것은? (자바 책 p.51~, 웹 책 p.371~2)
+        // 01. _har    //-_는 자바스크립트에서 맨 앞에 올 수 있음
+        // 02. 2kd     // 숫자 못 씀
+        // 03. var     // 이미 자바스크립트에 포함되어 있음
+        // 04. $ab     //특수기호는 못 씀
+
+        //선언적 함수
+        // {
+        //     function func(){
+        //         document.write("실행되었습니다.!<br>");
+        //     }
+        //     func();
+        // }
+
+        //익명 함수
+        // {
+        //     const func = function(){
+        //         document.write("실행되었습니다.!<br>");
+        //     }
+        //     func();
+        // }
+
+        //매개변수 함수
+        // {
+        //     function func(str){
+        //         document.write(str);
+        //     }
+        //     func("실행되었습니다.!<br>");
+        // }
+
+        //리턴값(결과/끝) 함수
+        // {
+        //     function func() {
+        //         const str = "실행되었습니다.!";
+        //         return str;
+        //     }
+        //     document.write(func());
+        // }
+
+        // document.write("<br><br>");
+
+        // 05. 화살표 함수
+        // {
+        //     func() = () => {
+        //         document.write("실행되었습니다.");
+        //     }
+        //     func();
+        // }                       //선언적 함수를 화살표 함수로
+        
+        // {
+        //     const func = () => {
+        //         document.write("실행되었습니다.");
+        //     }
+        //     func();
+        // }                       //익명 함수를 화살표 함수로
+        
+        // {
+        //     func= (str) => {
+        //         document.write(str);
+        //     }
+        //     func("실행되었습니다.");
+        // }                       //매개변수 함수를 화살표 함수로
+
+        // {
+        //     func = () => {
+        //         const str="실행되었습니다.";
+        //         return str;
+        //     }
+        //     document.write(func());
+        // }                       //결과값 함수를 화살표 함수로
+
+        // // 일반 함수와 결과값 함수는 동일함. fuction을 화살표로 바꾼 것.
+
+    </script>
 
 </body>
 </html>
