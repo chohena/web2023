@@ -3,79 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트</title>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-        #wrap {}
+        #wrap {
+            width: 100%;
+        }
         #header {
-            width: 1200px;
+            width: 100%;
             height: 100px;
-            background-color: #111;
+            background-color: #EEEBE9;
         }
-        #header1 {
-            width: 300px;
+        #nav {
+            width: 100%;
             height: 100px;
-            background-color: #ff3da8;
+            background-color: #B9AAA5;
         }
-        #banner {
+        #main {
+            width: 100%;
+            height: 780px;
+            background-color: #886F65;
+        }
+        #article{
             width: 1200px;
-            height: 500px;
-            background-color: #0fff;
+            height: 780px;
+            background-color: #222;
         }
-        #cont {
-            width: 1200px;
-            height: 380px;
-            background-color: #00ff;
+        #aside1{
+            width: 600px;
+            height: 15%;
+            background-color: #74574A;
         }
-        #cont1 {
-            width: 400px;
-            height: 380px;
-            background-color: #5ba15d;
+        #aside2{
+            width: 600px;
+            height: 25%;
+            background-color: #4A352F;
         }
-        #cont2 {            
-            width: 400px;
-            height: 380px;
-            background-color: #1234;}
-        #cont3 {
-            width: 400px;
-            height: 380px;
-            background-color: #4354f;
+        #aside3{
+            width: 600px;
+            height: 60%;
+            background-color: #4A352F;
         }
         #footer {
+            width: 100%;
+            height: 0px;
+            background-color: #4E342E;
+        }
+        .container {
             width: 1200px;
-            height: 100px;
-            background-color: #866a6a;
+            height: inherit;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.2);
         }
-        #footer1 {
-            width: 200px;
-            height: 100px;
-            background-color: #dd4efa;
-        }
-        #footer2 {}
-        #footer3 {}
+
     </style>
 </head>
 <body>
     <div id="wrap">
-        <div id="header">
-            <div id="header1"></div>
-        </div>
-        <div id="banner"></div>
-        <div id="cont">
-            <div id="cont1"></div>
-            <div id="cont2"></div>
-            <div id="cont3"></div>
-        </div>
-        <div id="footer">
-            <div id="footer1"></div>
-            <div id="footer2"></div>
-            <div id="footer3"></div>
-        </div>
+        <header id="header">
+            <div class="container"></div>
+        </header>
+        <nav id="nav">
+            <div class="container"></div>
+        </nav>
+        <main id="main">
+            <div class="container">
+                <div class="article">
+                    <div class="aside1"></div>
+                    <div class="aside2"></div>
+                    <div class="aside3"></div>
+                </div>
+                <div class="article2">
+                    <div class="scetion1"></div>
+                    <div class="scetion2"></div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="container"></div>
+        </footer>
     </div>
 </body>
 </html>
