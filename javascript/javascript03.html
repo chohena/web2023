@@ -78,9 +78,10 @@
                 <p>함수 선언식(function declaration)으로 정의된 함수를 가리킵니다. </p>
                 <div class="script">
 <pre><code class="language-js">{
-    fution func (){
-        doc
+    function func (){
+        document.write("실행됐습니다.");
     }
+    func ();
 }
 </code></pre>
                 </div>
@@ -158,9 +159,9 @@
                 <div class="script">
 <pre><code class="language-js">{
     function func() {
-    const str = "실행되었습니다.!";
-    return str;
-    }
+        const str = "실행되었습니다.!";
+        return str;
+        }
     document.write(func());
 }
 
