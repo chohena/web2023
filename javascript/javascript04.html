@@ -471,115 +471,115 @@ document.write("<br>");
     
     <script>
         // 01. if 문
-        {
-                //null, undifined, "", 0, false
-            if(null){
-                document.write("실행되었습니다.(true)");
-            } else {
-                document.write("실행되었습니다.(false)");
-            }
-        }
-        // 02. 생략 가능
-        {
-                //null, undifined, "", 0, false
-            if("") document.write("실행되었습니다.(true)");
-            else document.write("실행되었습니다.(false)");
-        }
+        // {
+        //         //null, undifined, "", 0, false
+        //     if(null){
+        //         document.write("실행되었습니다.(true)");
+        //     } else {
+        //         document.write("실행되었습니다.(false)");
+        //     }
+        // }
+        // // 02. 생략 가능
+        // {
+        //         //null, undifined, "", 0, false
+        //     if("") document.write("실행되었습니다.(true)");
+        //     else document.write("실행되었습니다.(false)");
+        // }
 
-        // 03. 삼항연산자로 변경
-        {
-            ("") ? document.write("실행되었습니다.(true)") : document.write("실행되었습니다.(false)")
-        }
+        // // 03. 삼항연산자로 변경
+        // {
+        //     ("") ? document.write("실행되었습니다.(true)") : document.write("실행되었습니다.(false)")
+        // }
 
-        // 04. 다중 if문 == switch 문
-        {
-            const num = 100;
+        // // 04. 다중 if문 == switch 문
+        // {
+        //     const num = 100;
 
-            if(num == 90){
-                document.write("실행90");
-            } else if(num == 80){
-                document.write("실행80");
-            } else if(num == 70){
-                document.write("실행70");
-            } else if(num == 60){
-                document.write("실행60");
-            } else if(num == 50){
-                document.write("실행50");
-            } else {
-                document.write("0");
-            }
-        }
+        //     if(num == 90){
+        //         document.write("실행90");
+        //     } else if(num == 80){
+        //         document.write("실행80");
+        //     } else if(num == 70){
+        //         document.write("실행70");
+        //     } else if(num == 60){
+        //         document.write("실행60");
+        //     } else if(num == 50){
+        //         document.write("실행50");
+        //     } else {
+        //         document.write("0");
+        //     }
+        // }
 
-        // 05. 중첩 if문
+        // // 05. 중첩 if문
 
-        // 06. switch문
-        {
-            const num  = 100;
+        // // 06. switch문
+        // {
+        //     const num  = 100;
 
-            switch(num){
-                case 90:
-                    document.write("실행90");
-                    break;
-                case 80:
-                    document.write("실행80");
-                    break;
-                case 70:
-                    document.write("실행70"); 
-                    break;
-                case 60:
-                    document.write("실행60");
-                    break; 
-                case 50:
-                    document.write("실행50"); 
-                    break;
-                default:
-                    document.write("0");    
-            }
-        }
-        document.write("<br>")
+        //     switch(num){
+        //         case 90:
+        //             document.write("실행90");
+        //             break;
+        //         case 80:
+        //             document.write("실행80");
+        //             break;
+        //         case 70:
+        //             document.write("실행70"); 
+        //             break;
+        //         case 60:
+        //             document.write("실행60");
+        //             break; 
+        //         case 50:
+        //             document.write("실행50"); 
+        //             break;
+        //         default:
+        //             document.write("0");    
+        //     }
+        // }
+        // document.write("<br>")
 
-        // 07. while 문
-        {
-            for(let i=0; i<5; i++){     // 초기값
-                document.write(i);      // 조건식
-            }
+        // // 07. while 문
+        // {
+        //     for(let i=0; i<5; i++){     // 초기값
+        //         document.write(i);      // 조건식
+        //     }
 
-            let num = 0;                // 초기값
-            while(num<5){               // 조건식
-                document.write(num);    
-                num++;                  // 증가값           // 조건에 맞지 않으면 실행 안됨 (죽은 문법)
-            }
-            document.write("<br>")
+        //     let num = 0;                // 초기값
+        //     while(num<5){               // 조건식
+        //         document.write(num);    
+        //         num++;                  // 증가값           // 조건에 맞지 않으면 실행 안됨 (죽은 문법)
+        //     }
+        //     document.write("<br>")
         
-        // 08. do while 문
-            let num2 = 0;
-            do {
-                document.write(num2);       // 조건에 맞지 않아도 맞는게 있으면 한번은 실행됨 (죽은 문법)
-                num2++;
-            } while (num2<5);
-        }
-            document.write("<br>")
+        // // 08. do while 문
+        //     let num2 = 0;
+        //     do {
+        //         document.write(num2);       // 조건에 맞지 않아도 맞는게 있으면 한번은 실행됨 (죽은 문법)
+        //         num2++;
+        //     } while (num2<5);
+        // }
+        //     document.write("<br>")
 
-        // 09. for 문
-        {
-            for(let i=1; i<100; i++){
-                document.write(i);
-            }
+        // // 09. for 문
+        // {
+        //     for(let i=1; i<100; i++){
+        //         document.write(i);
+        //     }
 
-            document.write("<br>")
+        //     document.write("<br>")
 
-            let num = [1,2,3,4,5,6,7,8,9];
-            let sum = 0;
+        //     let num = [1,2,3,4,5,6,7,8,9];
+        //     let sum = 0;
 
-            for(let i=0; i<num.length; i++){
-                document.write(num[i]);
-                // 방법1 sum = sum + num[i];
-                sum += num[i];      // 방법2
-            }
+        //     for(let i=0; i<num.length; i++){
+        //         document.write(num[i]);
+        //         // 방법1 sum = sum + num[i];
+        //         sum += num[i];      // 방법2
+        //     }
 
-            document.write("<br>");
-            document.write(sum);
-        }
+        //     document.write("<br>");
+        //     document.write(sum);
+        // }
 
         // 10. 중첩 for 문
         // {
@@ -617,27 +617,27 @@ document.write("<br>");
 
         
 
-        // 11. break 문
-        {
-            for(let i = 1; i<20; i++){
-                if(i == 10){
-                    break;
-                }
-                document.write(i);
-            }
-        }
-        document.write("<br>");
+        // // 11. break 문
+        // {
+        //     for(let i = 1; i<20; i++){
+        //         if(i == 10){
+        //             break;
+        //         }
+        //         document.write(i);
+        //     }
+        // }
+        // document.write("<br>");
 
-        // 12. continue 문
-        {
-            for(let i = 1; i<20; i++){
-                if(i == 10){
-                    continue;
-                }
-                document.write(i);
-            }
-        }
-        document.write("<br>");
+        // // 12. continue 문
+        // {
+        //     for(let i = 1; i<20; i++){
+        //         if(i == 10){
+        //             continue;
+        //         }
+        //         document.write(i);
+        //     }
+        // }
+        // document.write("<br>");
         
     </script>
 
