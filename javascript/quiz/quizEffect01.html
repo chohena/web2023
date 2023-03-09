@@ -81,7 +81,7 @@
         const quizAnswerConfirm = quizWrap.querySelector(".quiz__answer .confirm");
         const quizAnswerResult = quizWrap.querySelector(".quiz__answer .result");
         const dogWrap = quizWrap.querySelector(".dog__wrap");
-        
+
 
         // 문제 정보
         const infoType = "웹디자인 기능사";
@@ -101,7 +101,7 @@
         quizAnswerResult.style.display = "none";
 
         // 정답 확인
-        quizAnswerConfirm.addEventListener("click",function(){
+        quizAnswerConfirm.addEventListener("click", function () {
             quizAnswerResult.style.display = "block";
             quizAnswerConfirm.style.display = "none";
             dogWrap.classList.add("like");
