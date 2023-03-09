@@ -2,10 +2,10 @@
 나의 블로그 : https://henecording.tistory.com/   
 
 # JAVASCRIP
-데이터 저장하기 : https://github.com/chohena/web2023/blob/main/javascript/javascript01.html
-데이터 불러오기 : https://github.com/chohena/web2023/blob/main/javascript/javascript02.html
-데이터 실행하기 : https://github.com/chohena/web2023/blob/main/javascript/javascript03.html
-데이터 제어하기 : https://github.com/chohena/web2023/blob/main/javascript/javascript04.html   
+데이터 저장하기 : https://github.com/chohena/web2023/blob/main/javascript/javascript01.html   
+데이터 불러오기 : https://github.com/chohena/web2023/blob/main/javascript/javascript02.html   
+데이터 실행하기 : https://github.com/chohena/web2023/blob/main/javascript/javascript03.html   
+데이터 제어하기 : https://github.com/chohena/web2023/blob/main/javascript/javascript04.html    
    
 퀴즈 게임01 : https://chohena.github.io/web2023/javascript/quiz/quizEffect01.html   
 
