@@ -8,6 +8,8 @@
     padding: 10px;
     width: 100%;
     z-index: 1000;
+    display:  flex;
+    justify-content: space-between;
 }
 #header::before {
     content: '';
@@ -30,6 +32,24 @@
 }
 #header h1 em {
     font-size: 0.5em;
+}
+#header ul {
+  padding: 5px;
+}
+#hedaer li {
+  display: inline;
+  z-index: 10;
+  position: relative;
+}
+#header li a {
+  color: #fff;
+  font-family: 'DungGeunMo';
+  border: 1px dashed #fff;
+}
+#header li.active a,
+#header li a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* footer */
@@ -70,7 +90,7 @@
     flex-wrap: wrap;
 }
 .quiz__wrap .quiz {
-    max-width: 500px;
+    width: 500px;
     background-color: #fff;
     border: 8px ridge #cacaca;
 }
@@ -128,9 +148,31 @@
     font-size: 20px;
     /* display: none; */
 }
+.quiz__answer .input {
+  background-color: #fff;
+  border: 6px groove #cacaca;
+  width: 100%;
+  font-family: 'IropkeBatang';
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .quiz__view {
     border-bottom: 6px ridge #cacaca;
     overflow: hidden;
+}
+.quiz__footer {
+  border-top: 6px ridge #cacaca;
+  padding: 20px;
+  font-family: 'IropkeBatang';
+  background-color: #f5f5f5;
+}
+.quiz__footer::before {
+  content: "Tip";
+}
+.quiz__desc {
+  padding-top: 5px;
+  color: #b94141;
 }
 
 /* dog__wrap */
