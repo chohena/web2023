@@ -237,7 +237,7 @@
                                 500<br>
                                 600<br>
                                 700<br>
-                                600<br>
+                                800<br>
                                 900
                             </div>
                         </details>
@@ -264,7 +264,14 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                
+                                j:1
+                                j:1
+                                j:2
+                                j:3
+                                ...
+                                j:8
+                                j:9
+                                j:10
                             </div>
                         </details>
                     </div>
@@ -287,61 +294,6 @@
 
     document.write("<br>,<br>");
 }
-
-    <!-- for(let i=0; i<num.length; i++){
-
-        document.write(num[i]);
-
-    }
-
-    forEach - 배열 안에 반복되는 데이터가 있을 떄 사용. 데이터가 제일 첫번째에 나옴.
-
-    num.forEach(function(el){
-
-        document.write(el);
-
-    });
-
-    foeEach : 화살표 함수
-
-    num.forEach ((el)=&gt;{
-
-        document.write(el, "<br>");
-
-    });
-
-        document.write("<br>");
-
-
-    forEach : 화살표 함수 (괄호생략)
-
-    num.forEach(el=&gt;{
-
-        document.write(el, "<br>")
-
-    });
-
-    foeEach : 화살표 함수 (중괄호생략)
-
-    num.forEach(el=&gt; document.write(el, "<br>"));
-
-    };
-
-    document.write("<br>");
-
-    forEach는 값, 인덱스, 배열을 불러올 수 있는 특징이 있다. 값,인덱스,배열=파라먼트
-
-    num.forEach(function(element, index, array){
-
-        document.write(element,"<br>");
-
-        document.write(index,"<br>");
-
-        document.write(array,"<br>");
-
-    })
-
-} -->
 </code></pre>
                     </div>
                     <div class="result">
@@ -373,7 +325,7 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                
+                                100,200,300,400,500
                             </div>
                         </details>
                     </div>
@@ -398,7 +350,7 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                
+                                0,1,2,3,4
                             </div>
                         </details>
                     </div>
@@ -433,7 +385,21 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                
+                                100
+                                0
+                                100,200,300,400,500
+                                200
+                                1
+                                100,200,300,400,500
+                                300
+                                2
+                                100,200,300,400,5500
+                                400
+                                3
+                                100,200,300,400,500
+                                500
+                                4
+                                100,200,300,400,500
                             </div>
                         </details>
                     </div>
@@ -486,7 +452,7 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                100, 200, "javascrip"
+                                100, 200, "javascript"
                             </div>
                         </details>
                     </div>
@@ -501,7 +467,7 @@
     const obj = {
         a: 100,
         b: 200,
-        c: "javascrip"
+        c: "javascript"
     }
     console.log(obj.a);
     console.log(obj.b);
@@ -513,7 +479,7 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                100, 200, javascrip
+                                100, 200, javascript
                             </div>
                         </details>
                     </div>
@@ -528,7 +494,7 @@
     const obj = {
         a:100;
         b:200;
-        c:"javascrip"
+        c:"javascript"
     }
     console.log(Object.keys(obj));
     console.log(Object.values(obj));
@@ -542,7 +508,7 @@
                             <div>
                                 a,b,c<br>
                                 100, 200, javascript<br>
-                                3
+                                a,100,b,200,c,javascript
                             </div>
                         </details>
                     </div>
@@ -557,7 +523,7 @@
     const obj = {
         a: 100;
         b: 200;
-        c: "javascrip"
+        c: "javascript"
     }
     const name1 = obj.a;
     const name2 = obj.b;
@@ -573,7 +539,9 @@
                         <details>
                             <summary>결과 확인하기</summary>
                             <div>
-                                100, 200, javascrip
+                                100<br>
+                                200<br>
+                                javascript
                             </div>
                         </details>
                     </div>
@@ -588,7 +556,7 @@
     const obj = {
         a: 100;
         b: 200;
-        c: "javascrip";
+        c: "javascript";
     }
     for(let key in obj){
         console.log(key);
@@ -606,7 +574,7 @@
                                 c<br>
                                 100<br>
                                 200<br>
-                                javascrip
+                                javascript
                             </div>
                         </details>
                     </div>
@@ -781,7 +749,7 @@
                                 100<br>
                                 100<br>
                                 200<br>
-                                javascrip
+                                javascript
                             </div>
                         </details>
                     </div>
@@ -826,6 +794,60 @@
     //         arr.forEach(el => document.write(el));
     //     }
 
+    //     <!-- for(let i=0; i<num.length; i++){
+
+    // document.write(num[i]);
+
+    // }
+
+    // forEach - 배열 안에 반복되는 데이터가 있을 떄 사용. 데이터가 제일 첫번째에 나옴.
+
+    // num.forEach(function(el){
+
+    // document.write(el);
+
+    // });
+
+    // foeEach : 화살표 함수
+
+    // num.forEach ((el)=&gt;{  
+
+    // document.write(el, "<br>");  
+
+    // });  
+
+    // document.write("<br>");  
+
+
+    // forEach : 화살표 함수 (괄호생략) 
+
+    // num.forEach(el=&gt;{ 
+
+    // document.write(el, "<br>")   
+
+    // });  
+
+    // foeEach : 화살표 함수 (중괄호생략)   
+
+    // num.forEach(el=&gt; document.write(el, "<br>")); 
+
+    // };   
+
+    // document.write("<br>");  
+
+    // forEach는 값, 인덱스, 배열을 불러올 수 있는 특징이 있다. 값,인덱스,배열=파라먼트 
+
+    // num.forEach(function(element, index, array){ 
+
+    // document.write(element,"<br>");  
+
+    // document.write(index,"<br>");    
+
+    // document.write(array,"<br>");    
+
+    // })
+
+    // } -->
     </script>
 </body>
 </html>
