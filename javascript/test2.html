@@ -8,14 +8,240 @@
 </head>
 <body>
     <script>
-        //1.1~100까지 출력
-        //2. 100칸 테이블 만들기
-        //3. 구구단 20단만 출력
-        //4. 1~100 짝수의 합 출력
-        //5. 1-100까지 출력(짝수는 파란색 홀수는 빨간색)
-        //6. 배열안에 1-10까지 데이터가 있음 (forEach문을 통해 출력하시오)
-        //7. 함수의 유형 4가지
-        //8. 7번을 화살표 함수로 바꾸기
+        // 01. 0~100까지 출력
+        {
+            for(let i=0; i<=100; i++){
+            document.write(i);
+            }
+        }
+        document.write("<br><br>");
+        // 02. 100칸 테이블
+        {
+            table = "<table border=1>";
+            for(let i=1; i<=10; i++){
+                table += "<tr>";
+                for(let j=1; j<=10; j++){
+                    table += "<td>"+i+"</td>";
+                }
+            }
+            table += "</table>";
+            document.write(table);
+        }
+        document.write("<br>");
+        // 03. 구구단 20단만 출력
+        {
+            for(let i=20; i<21; i++){
+                document.write(i+"단"+"<br>")
+                for(let j=1; j<=9; j++){
+                    document.write(i+"*"+j+"="+i*j+"<br>");
+                }
+            }
+        }
+        document.write("<br>");
+        // 04. 1부터 100까지 출력(짝수의 합)
+        {
+            num = 0;
+            for(let i=1; i<=100; i++){
+                if(i % 2 == 0){
+                    num +=i;
+                }
+            }
+            document.write(num);
+        }
+        document.write("<br><br>");;
+        // 05. 1부터 100까지 출력(짝수는 파란색, 홀수는 빨간색)
+        {
+            for(let i=1; i<=100; i++){
+                if(i % 2==1){
+                    document.write("<span style=color:red>"+i+"</span>")
+                } else {
+                    document.write("<span style=color:blue>"+i+"</span>")
+                }
+            }
+        }
+        document.write("<br><br>");
+        // 06. 배열안에 1-10까지 데이터가 있음 (forEach문을 통해 출력하시오)
+        {
+            const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            arr.forEach(function(el){
+                document.write(el);
+            })
+        }
+        document.write("<br><br>");
+        // 07. 함수의 유형 4가지
+        {
+            function func(){
+                document.write("실행");
+            }
+            func();
+        }
+        document.write("<br><br>");
+        {
+            const func = function(){
+                document.write("실행");
+            }
+            func();
+        }
+        document.write("<br><br>");
+        {
+            function func(str){
+                document.write(str);
+            }
+            func("실행");
+        }
+        document.write("<br><br>");
+        {
+            function func(){
+                const str = "실행";
+                return str;
+            }
+            document.write(func());
+        }
+        document.write("<br><br>");
+        //08. 7번을 화살표 함수로
+        {
+            func = () => {
+                document.write("실행");
+            }
+            func();
+        }
+        document.write("<br><br>");
+        {
+            const func = () => {
+                document.write("실행");
+            }
+            func();
+        }
+        document.write("<br><br>");
+        {
+            func = (str) => {
+                document.write(str);
+            }
+            func("실행");
+        }
+        document.write("<br><br>");
+        {
+            func = () => {
+                const str = "실행";
+                return str;
+            }
+            document.write(func());
+        }
+        // sample01
+
+        //1부터 50까지
+        {
+        for ( let i=1; i<=50; i++){
+        document.write(i);
+        }
+        }
+        document.write ("<br>")
+        //1~100 홀수(빨), 짝(파)
+        {
+        for (let i = 1; i <= 100; i++) {
+            if ( i % 2 == 0) {
+            document.write("<span style='color : blue'>" + i + "</span> ");
+            } else if (i % 1 == 0) {
+            document.write("<span style='color : red'>" + i + "</span> ");
+            }
+        }
+        }
+        //테이블 가로 10칸, 세로 5칸
+        {
+        let table = "<table border='1'>";
+            for(let i=1; i<=10; i++){
+            table += "<tr>";
+            for(let j=1; j<=5; j++){
+            table += "<td>"+ j +"</td>";
+            }
+            table += "</tr>";
+            }
+            table += "</table>";
+        document.write(table);
+        }
+        //16단만 구구단
+        {
+            for(let i=16; i<=16; i++) {
+                document.write(i + "단","<br>")
+            for(let j=1; j<=9; j++) {
+                document.write(i + "*" + j + "=" + i*j,"<br>")
+                }
+            }
+        }
+        //1~10까지 합(for)
+        {
+        let sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            sum += i;
+        }
+        document.write(sum);
+        }
+        document.write("<br>");
+        //함수 8가지 (화살표 포함)
+        {
+        function func(){
+            document.write("실행");
+        }
+        func();
+        }
+        document.write("<br>");
+        //선언 화살표
+        {
+        func = () => {
+            document.write("실행");
+        }
+        func();
+        }
+        document.write("<br>");
+        //리턴
+        {
+        function func() {
+            const str = "실행"
+            return str;
+        }
+        document.write(func());
+        }
+        document.write("<br>");
+        //리턴 화살표
+        {
+        func = () => {
+            const str = "실행"
+            return str;
+        }
+        document.write(func());
+        }
+        document.write("<br>");
+        //익명
+        {
+        const func = function(){
+            document.write("실행");
+        }
+        func();
+        }
+        document.write("<br>");
+        //익명 화살표
+        {
+        const func = () => {
+            document.write("실행");
+        }
+        func();
+        }
+        document.write("<br>");
+        //매개
+        {
+        function func(str){
+            document.write(str);
+        }
+        func("실행");
+        }
+        document.write("<br>");
+        //매개 화살표
+        {
+        func = (str) => {
+        document.write(str);
+        }
+        func("실행");
+        }
     </script>
 </body>
 </html>

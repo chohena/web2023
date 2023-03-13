@@ -5,25 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box {
+            border: 5px solid palegoldenrod;
+            height: 100px;
+        }
+        .box {
+            border: 5px solid palegoldenrod;
+            height: 100px;
+        }
+        .box {
+            border: 5px solid palegoldenrod;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
+    <div class="box"></div>
+    <div class="box"></div>
+
     <script>
-        {
-            var x = 100;
-            var y = 200;
-            var z = "java";
+        //box 안보이게
+        // document.querySelector(".box").style.display = "none";       // 1개만
 
-            console.log(x);
-            console.log(y);
-            console.log(z);
-        }
-        {
-            var x = 100;
-            var y = 200;
-            var z = "java"
+        // document.querySelectorAll(".box").forEach(function(el){      // 2개다
+        //     el.style.display = "none";
+        // });
 
-            consloe.log(x,y,z);
+    const num = [
+        {
+            a: "1",
+            b: "2",
+            c: "3"
         }
+    ]
+    document.querySelector(".box").innerHTML = num[0].b;            
+    document.querySelectorAll(".box").forEach(function(el){         //.box 는 style에 있는 것을 의미. 그리고 이걸 el로 표시함. (숫자의 요소가 아닌 box로 설정했으니 box 요소임)
+        el.innerHTML = num[0].b;                                    // 그래서 출력할 때는 el. (box의 요소에 글자를 출력하는 것) 글자의 출력값을 써주면 됨.
+    });
+
+    document.querySelector(".box").innerHTML = num[0].b;
+    document.querySelectorAll(".box").forEach(function(el){
+        el.innerHTML = num[0].b;
+    });
+
+    document.querySelector(".box").innerHTML = num[0].b;
+    document.querySelectorAll(".box").forEach(function(el){
+        el.innerHTML = num[0].b;
+    });
+
+    document.querySelector(".box").innerHTML = num[0].b;
+    document.querySelectorAll(".box").forEach(function(el){
+        el.innerHTML = num[0].b;
+    });
+
+    document.querySelector(".box").innerHTML = num[0].b;
+    document.querySelectorAll(".box").forEach(function(el){
+        el.innerHTML = num[0].b;
+    });
+
     </script>
 </body>
 </html>
