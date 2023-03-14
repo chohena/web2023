@@ -8,15 +8,16 @@
     padding: 10px;
     width: 100%;
     z-index: 1000;
-    display:  flex;
+    display: flex;
     justify-content: space-between;
 }
 #header::before {
-    content: '';
+    content: " ";
     border: 4px ridge #a3a3a3;
     position: absolute;
     left: 5px;
     top: 5px;
+    /* 하이픈 부분 띄어야 먹힘 */
     width: calc(100% - 10px);
     height: calc(100% - 10px);
 }
@@ -36,7 +37,7 @@
 #header ul {
   padding: 5px;
 }
-#hedaer li {
+#header li {
   display: inline;
   z-index: 10;
   position: relative;
@@ -45,6 +46,8 @@
   color: #fff;
   font-family: 'DungGeunMo';
   border: 1px dashed #fff;
+  display: inline-block;
+  padding: 5px;
 }
 #header li.active a,
 #header li a:hover {
@@ -173,9 +176,47 @@
   content: "Tip❣️ ";
   color: #b94141;
   font-weight: bold;
-
 }
-
+.quiz__choice {
+  padding: 20px;
+  border-bottom: 6px ridge #cacaca;
+  font-family: 'IropkeBatang';
+}
+.quiz__choice label {
+  display: flex;
+}
+.quiz__choice label input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.quiz__choice label span {
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 7px;
+  display: flex;
+  cursor: pointer;
+  margin: 2px 0;
+}
+.quiz__choice label span::before{
+  content: '';
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 4px #6fa30b;
+  transition: all 0.2s;
+}
+.quiz__choice label input:checked + span {
+  background-color: #f5ffe7;
+}
+.quiz__choice label input:checked + span::before {
+  box-shadow: inset 0 0 0 8px #6fa30b;
+}
 /* dog__wrap */
 .dog .tail,
 .dog .chin,
